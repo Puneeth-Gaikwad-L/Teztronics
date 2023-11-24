@@ -1,0 +1,49 @@
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: sticky !important;
+    top: 0;
+    z-index: 10;
+}
+
+.hero{
+    width: 100vw;
+    height: 50vh;
+    background-color: #fff;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel{
+    width: 90%;
+    height: 95%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.237);
+    transition: all 0.5s ease;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.my-img{
+    object-fit: cover;
+    object-position: center ;
+    height: 100%;
+}
+
+@media only screen and (max-width: 620px){
+    .hero{
+        height: 30vh;
+    }
+}
