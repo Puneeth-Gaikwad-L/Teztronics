@@ -10,7 +10,7 @@ body{
 
 .hero{
     width: 100vw;
-    height: 50vh;
+    height: 65vh;
     background-color: #fff;
     display: flex;
     overflow: hidden;
@@ -39,7 +39,11 @@ body{
 .my-img{
     object-fit: cover;
     object-position: center ;
-    height: 100%;
+}
+
+.menu{
+    width: 100vw;
+    height: 100vh;
 }
 
 @media only screen and (max-width: 620px){
