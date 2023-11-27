@@ -77,6 +77,11 @@ body {
     overflow-y: scroll;
     padding-top: 10px;
     background-color: #0a1121;
+    color: #ffffff;
+}
+
+.card-body{
+    color: #000;
 }
 
 .container-fluid::-webkit-scrollbar {
