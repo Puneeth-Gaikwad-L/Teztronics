@@ -1,24 +1,38 @@
-body{
+body {
     overflow-x: hidden;
+    background-color: #efefe9;
 }
 
-.navbar{
+.navbar {
     position: sticky !important;
     top: 0;
     z-index: 10;
 }
 
-.hero{
+.navbar-brand{
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+.navbar-brand>img {
+    width: 100%;
+    object-fit: contain;
+    object-position: 0 -52px;
+}
+
+.hero {
     width: 100vw;
     height: 65vh;
-    background-color: #fff;
+    background-color: transparent;
     display: flex;
     overflow: hidden;
     align-items: center;
     justify-content: center;
 }
 
-.carousel{
+.carousel {
     width: 90%;
     height: 95%;
     border-radius: 20px;
@@ -27,71 +41,79 @@ body{
     transition: all 0.5s ease;
 }
 
-.carousel-inner{
+.carousel-inner {
     width: 100%;
     height: 100%;
 }
 
-.carousel-item{
+.carousel-item {
     height: 100%;
 }
 
-.my-img{
+.my-img {
     object-fit: cover;
-    object-position: center ;
+    object-position: center;
 }
 
-.menu{
+.menu {
     width: 100vw;
-    height: 75vh;
+    height: 85vh;
     margin-top: 20px;
+    overflow: hidden;
 }
 
-.content{
+.content {
     display: none;
 }
 
-.content.active{
+.content.active {
     display: block;
 }
 
-.container-fluid{
+.container-fluid {
     /* background-color: blue; */
-    height: 500px;
+    height: 100%;
+    padding-bottom: 15px;
     overflow-y: scroll;
     padding-top: 10px;
+    background-color: #0a1121;
 }
 
-.myCard-container{
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 10px;
+.container-fluid::-webkit-scrollbar {
+    display: none;
 }
 
-.card>img{
+.card>img {
     height: 250px;
     object-fit: cover;
     object-position: center;
 }
 
-.card{
-    border-radius: 10px;
-    overflow: hidden;
+.row {
+    margin-top: 10px;
 }
 
-@media only screen and (max-width: 620px){
-    body{
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.about-us {
+    width: 100vw;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 620px) {
+    body {
         overflow-x: hidden !important;
     }
-    .hero{
+
+    .hero {
         height: 30vh;
     }
 
-    .card{
+    .card {
         margin-top: 10px;
         margin-inline: auto;
     }
