@@ -57,7 +57,7 @@ body {
 
 .menu {
     width: 100vw;
-    height: 85vh;
+    height: 150vh;
     margin-top: 20px;
     overflow: hidden;
 }
@@ -75,7 +75,7 @@ body {
     height: 100%;
     padding-bottom: 15px;
     overflow-y: scroll;
-    padding-top: 10px;
+    padding: 0px;
     background-color: #0a1121;
     color: #ffffff;
 }
@@ -102,11 +102,32 @@ body {
     border-radius: 10px;
     overflow: hidden;
     margin-top: 10px;
+    height: 450px;
 }
 
-.about-us {
+.categories {
     width: 100vw;
     height: 100vh;
+}
+
+.Mycontainer{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 10px;
+    justify-content: center;
+}
+
+.Mycontainer::-webkit-scrollbar{
+    display: none;
+}
+
+.menu-header{
+    width: 95%;
+    margin-inline: auto;
+    text-align: left;
 }
 
 @media only screen and (max-width: 620px) {
@@ -121,5 +142,16 @@ body {
     .card {
         margin-top: 10px;
         margin-inline: auto;
+    }
+
+    .menu{
+        margin-top: 0;
+    }
+
+    .menu-header{
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
