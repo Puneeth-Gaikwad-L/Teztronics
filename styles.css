@@ -128,6 +128,15 @@ body {
     width: 95%;
     margin-inline: auto;
     text-align: left;
+    margin-top: 10px;
+}
+
+.cat-width{
+   width: 290px; 
+}
+
+.cat-height{
+    height: 200px;
 }
 
 @media only screen and (max-width: 620px) {
