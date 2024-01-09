@@ -103,6 +103,7 @@ body {
     overflow: hidden;
     margin-top: 10px;
     height: 450px;
+    background: linear-gradient(90deg,#0c2457,#0f387d, #0d4d90);
 }
 
 .categories {
