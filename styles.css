@@ -24,7 +24,8 @@ body {
 
 .hero {
     width: 100vw;
-    height: 65vh;
+    /* height: 65vh; */
+    aspect-ratio: 1/0.3;
     background-color: transparent;
     display: flex;
     overflow: hidden;
@@ -57,9 +58,10 @@ body {
 
 .menu {
     width: 100vw;
-    height: 150vh;
+    height: 0;
     margin-top: 20px;
     overflow: hidden;
+    transition: all 0.5s ease-in;
 }
 
 .content {
@@ -98,12 +100,16 @@ body {
     margin-top: 10px;
 }
 
-.card {
+.MyCard {
     border-radius: 10px;
     overflow: hidden;
     margin-top: 10px;
     height: 450px;
     background: linear-gradient(90deg,#0c2457,#0f387d, #0d4d90);
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 .categories {
