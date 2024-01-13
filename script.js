@@ -7,24 +7,28 @@ const CategoriesData = [
       targetDiv: 'div-1',
       products: [{
         productName: 'ESD Anti-fatigue mat​',
-        productPrice: 1000,
-        productImage: ['./assets/images/ESD Anti-fatigue mat'],
+        productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
         productDescription: 'ESD Anti-fatigue mat​',
+      },
+      {
+        productName: 'ESD rubber mat - Green',
+        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
       }]
     },
-    {
-      title: 'Antistatic Cleaner',
-      targetDiv : 'div-2',
-    },
-    {
-      title: 'Floor marking Tapes',
-      targetDiv : 'div-3',
-    },
-    {
-      title: 'ESD Gloves & finger cots',
-      targetDiv : 'div-4',
-      }]
-    
+    // {
+    //   title: 'Antistatic Cleaner',
+    //   targetDiv: 'div-2',
+    // },
+    // {
+    //   title: 'Floor marking Tapes',
+    //   targetDiv: 'div-3',
+    // },
+    // {
+    //   title: 'ESD Gloves & finger cots',
+    //   targetDiv: 'div-4',
+    //   }
+    ]
+
 
   },
 
@@ -96,11 +100,11 @@ function renderCategory(cardDataArray) {
       if (cardDataArray[event.currentTarget.getAttribute('data-custom-value')].subCategory) {
         renderCategoryMenu(CategoriesData[i].subCategory);
         const displaySubCat = document.getElementById("displayMenu");
-        displaySubCat.style.height = "50vh"
+        displaySubCat.style.height = "fit-content"
       } else {
         document.getElementById("displayMenu").style.height = "0";
       }
-  });
+    });
 
     cardContainer.appendChild(card);
   };
@@ -128,6 +132,24 @@ function renderCategoryMenu(subCategory) {
 
     listItem.appendChild(link);
     navList.appendChild(listItem);
+
+    const targetDiv = document.createElement('div');
+    targetDiv.id = item.targetDiv;
+    targetDiv.className = `container-fluid content ${index === 0 ? 'active' : ''}`;
+
+    const innerContainer = document.createElement('div');
+    innerContainer.className = 'container-fluid Mycontainer';
+
+
+
+    item.products.forEach((product) => {
+      const card = renderCards(product)
+      innerContainer.appendChild(card);
+      targetDiv.appendChild(innerContainer);
+    })
+
+
+    document.getElementById("target-divs").appendChild(targetDiv);
   });
 }
 
@@ -161,4 +183,42 @@ function handleLinkClick() {
       targetDiv.classList.add('active');
     });
   });
+}
+
+function renderCards(product) {
+  console.log(product);
+  const card = document.createElement('div');
+  card.classList.add('card', 'MyProductCard');
+  card.style = 'width: 18rem;';
+
+  const cardImage = document.createElement('img');
+  cardImage.src = product.productImage[0]; // Add the actual image source
+  cardImage.className = 'card-img-top';
+  cardImage.alt = 'product.productName';
+
+  const cardBody = document.createElement('div');
+  cardBody.className = 'card-body';
+
+  const cardTitle = document.createElement('h5');
+  cardTitle.className = 'card-title';
+  cardTitle.textContent = product.productName;
+
+  const cardText = document.createElement('p');
+  cardText.className = 'card-text';
+  cardText.textContent = `Some quick example text to build on the card title and make up the bulk of the card's content.`;
+
+  const cardLink = document.createElement('a');
+  cardLink.href = '#';
+  cardLink.className = 'btn btn-primary';
+  cardLink.textContent = 'Go somewhere';
+
+  cardBody.appendChild(cardTitle);
+  cardBody.appendChild(cardText);
+  cardBody.appendChild(cardLink);
+
+  card.appendChild(cardImage);
+  card.appendChild(cardBody);
+
+  return card;
+
 }

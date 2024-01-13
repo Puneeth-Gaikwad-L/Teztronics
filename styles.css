@@ -68,6 +68,10 @@ body {
     display: none;
 }
 
+.targetDivs{
+    height: 100%;
+}
+
 .content.active {
     display: block;
 }
@@ -88,6 +92,12 @@ body {
 
 .container-fluid::-webkit-scrollbar {
     display: none;
+}
+
+.MyProductCard{
+    height: 450px;
+    background-color: red;
+    margin-top: auto;
 }
 
 .card>img {
