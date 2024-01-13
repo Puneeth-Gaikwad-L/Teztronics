@@ -1,52 +1,30 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const menuItems = document.querySelectorAll('.menu-item');
-  const contentDivs = document.querySelectorAll('.content');
-
-  menuItems.forEach(function (menuItem) {
-    menuItem.addEventListener('click', function (event) {
-      // Prevent the default behavior (scrolling to the top)
-      event.preventDefault();
-
-      // Remove 'active' class from all menu items
-      menuItems.forEach(function (item) {
-        item.classList.remove('active');
-      });
-
-      // Remove 'active' class from all content divs
-      contentDivs.forEach(function (contentDiv) {
-        contentDiv.classList.remove('active');
-      });
-
-      // Add 'active' class to the clicked menu item
-      menuItem.classList.add('active');
-
-      // Get the target div associated with the clicked menu item
-      const targetDivId = menuItem.getAttribute('data-target');
-      const targetDiv = document.getElementById(targetDivId);
-
-      // Add 'active' class to the target div
-      targetDiv.classList.add('active');
-    });
-  });
-});
-
-
 const CategoriesData = [
   {
     title: 'ESD Clean room products',
     description: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
     subCategory: [{
-      title: 'ESD Flooring & table mats'
+      title: 'ESD Flooring & table mats',
+      targetDiv: 'div-1',
+      products: [{
+        productName: 'ESD Anti-fatigue mat​',
+        productPrice: 1000,
+        productImage: ['./assets/images/ESD Anti-fatigue mat'],
+        productDescription: 'ESD Anti-fatigue mat​',
+      }]
     },
     {
-      title: 'Antistatic Cleaner'
+      title: 'Antistatic Cleaner',
+      targetDiv : 'div-2',
     },
     {
-      title: 'Floor marking Tapes'
+      title: 'Floor marking Tapes',
+      targetDiv : 'div-3',
     },
     {
-      title: 'ESD Gloves & finger cots'
-    }]
+      title: 'ESD Gloves & finger cots',
+      targetDiv : 'div-4',
+      }]
+    
 
   },
 
@@ -116,7 +94,7 @@ function renderCategory(cardDataArray) {
     card.addEventListener("click", (event) => {
       console.log(event.currentTarget);
       if (cardDataArray[event.currentTarget.getAttribute('data-custom-value')].subCategory) {
-        console.log("has category");
+        renderCategoryMenu(CategoriesData[i].subCategory);
         const displaySubCat = document.getElementById("displayMenu");
         displaySubCat.style.height = "50vh"
       } else {
@@ -129,3 +107,58 @@ function renderCategory(cardDataArray) {
 }
 
 renderCategory(CategoriesData)
+
+function renderCategoryMenu(subCategory) {
+  console.log(subCategory);
+  const navList = document.getElementById('menuList');
+  navList.innerHTML = '';
+
+  subCategory.forEach((item, index) => {
+    const listItem = document.createElement('li');
+    listItem.className = 'nav-item';
+
+    const link = document.createElement('a');
+    link.className = `nav-link menu-item ${index === 0 ? 'active' : ''}`;
+    link.setAttribute('data-target', item.targetDiv);
+    link.href = '#';
+    link.textContent = item.title;
+
+    // Add click event listener to each link
+    link.addEventListener('click', () => handleLinkClick());
+
+    listItem.appendChild(link);
+    navList.appendChild(listItem);
+  });
+}
+
+function handleLinkClick() {
+  const menuItems = document.querySelectorAll('.menu-item');
+  const contentDivs = document.querySelectorAll('.content');
+
+  menuItems.forEach(function (menuItem) {
+    menuItem.addEventListener('click', function (event) {
+      // Prevent the default behavior (scrolling to the top)
+      event.preventDefault();
+
+      // Remove 'active' class from all menu items
+      menuItems.forEach(function (item) {
+        item.classList.remove('active');
+      });
+
+      // Remove 'active' class from all content divs
+      contentDivs.forEach(function (contentDiv) {
+        contentDiv.classList.remove('active');
+      });
+
+      // Add 'active' class to the clicked menu item
+      menuItem.classList.add('active');
+
+      // Get the target div associated with the clicked menu item
+      const targetDivId = menuItem.getAttribute('data-target');
+      const targetDiv = document.getElementById(targetDivId);
+
+      // Add 'active' class to the target div
+      targetDiv.classList.add('active');
+    });
+  });
+}
