@@ -15,18 +15,57 @@ const CategoriesData = [
         productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
       }]
     },
-    // {
-    //   title: 'Antistatic Cleaner',
-    //   targetDiv: 'div-2',
-    // },
-    // {
-    //   title: 'Floor marking Tapes',
-    //   targetDiv: 'div-3',
-    // },
-    // {
-    //   title: 'ESD Gloves & finger cots',
-    //   targetDiv: 'div-4',
-    //   }
+    {
+      title: 'Antistatic Cleaner',
+      targetDiv: 'div-2',
+      products: [{
+        productName: 'ESD safe Floor cleaner',
+        productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+        productDescription: 'ESD Anti-fatigue mat​',
+      },
+      {
+        productName: 'ESD safe Mat & table cleaner',
+        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
+      }]
+    },
+    {
+      title: 'Floor marking Tapes',
+      targetDiv: 'div-3',
+      products: [{
+        productName: 'Single color tape​',
+        productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+        productDescription: 'ESD Anti-fatigue mat​',
+      },
+      {
+        productName: 'Double color tape',
+        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
+      },
+      {
+        productName: 'ESD Caution tape',
+        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
+      }]
+    },
+    {
+      title: 'ESD Gloves & finger cots',
+      targetDiv: 'div-4',
+      products: [{
+        productName: 'Anti-Static dotted gloves​',
+        productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+        productDescription: 'ESD Anti-fatigue mat​',
+      },
+      {
+        productName: 'ESD Palm Fit PU Coated gloves',
+        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
+      },
+      {
+        productName: 'ESD finger top Fit PU Coated gloves',
+        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
+      },
+      {
+        productName: 'Finger cots',
+        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
+      }]
+    }
     ]
 
 
@@ -100,7 +139,7 @@ function renderCategory(cardDataArray) {
       if (cardDataArray[event.currentTarget.getAttribute('data-custom-value')].subCategory) {
         renderCategoryMenu(CategoriesData[i].subCategory);
         const displaySubCat = document.getElementById("displayMenu");
-        displaySubCat.style.height = "fit-content"
+        displaySubCat.style.height = "fit-content";
       } else {
         document.getElementById("displayMenu").style.height = "0";
       }
