@@ -69,10 +69,71 @@ const CategoriesData = [
     {
       title: 'ESD footwear',
       targetDiv: 'div-5',
+      products: [
+        {
+          productName: 'ESD safety shoe​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'ESD Anti-fatigue mat​',
+        },
+        {
+          productName: 'ESD cleanroom shoe',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"]
+        },
+        {
+          productName: 'ESD slipper',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"]
+        },
+        {
+          productName: 'Manual Shoe cover dispenser',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"]
+        }]
+    },
+    {
+      title: "ESD garments",
+      targetDiv: 'div-6',
       products: [{
-        productName: 'ESD safety shoe​',
-        productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-        productDescription: 'ESD Anti-fatigue mat​',
+        productName: 'ESD apron​',
+        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+      },
+      {
+        productName: 'ESD cover all​',
+        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+      },
+      {
+        productName: 'ESD cap & bouffant cap​',
+        productImage: ["./assets/images/bouffant cap.webp", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+      },
+      {
+        productName: 'ESD shoe cover​',
+        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+      }]
+    },
+    {
+      title: "ESD grounding products",
+      targetDiv: 'div-7',
+      products: [{
+        productName: 'ESD wrist strap ',
+        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+      },
+      {
+        productName: 'Grounding cord​',
+        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+      },
+      {
+        productName: 'Common grounding point​',
+        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+      },
+      {
+        productName: 'ESD heel strap​',
+        productImage: ["./assets/images/ESD heel strap.jfif", "assets/images/ESD heel strap-2.jfif"],
+      },
+      {
+        productName: 'ESD field service kit',
+        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+      },
+      {
+        productName: 'ESD shoe cover with conductive strip',
+        productImage: ["./assets/images/ESD shoe cover with conductive strip.jpg", "./assets/images/ESD shoe cover with conductive strip-2.jfif"],
       }]
     }
     ]
@@ -87,6 +148,46 @@ const CategoriesData = [
       {
         title: 'Bins & Crates',
         targetDiv: 'div-1',
+        products: [{
+          productName: 'Conductive crate​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Conductive tray',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Conductive Dustbin​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Conductive component bins​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'ESD conductive corrugated box​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        }
+        ]
+      },
+      {
+        title: 'component Organizer',
+        targetDiv: 'div-2',
+        products: [{
+          productName: 'Conductive crate​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        ]
+      },
+      {
+        title: 'PCB storage',
+        targetDiv: 'div-3',
         products: [{
           productName: 'Conductive crate​',
           productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
