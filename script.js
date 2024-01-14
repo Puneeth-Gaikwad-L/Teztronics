@@ -16,16 +16,16 @@ const CategoriesData = [
       }]
     },
     {
-      title: 'Antistatic Cleaner',
+      title: 'Anti-static Cleaner',
       targetDiv: 'div-2',
       products: [{
         productName: 'ESD safe Floor cleaner',
-        productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+        productImage: ["./assets/images/ESD Floor cleaner.webp"],
         productDescription: 'ESD Anti-fatigue mat​',
       },
       {
         productName: 'ESD safe Mat & table cleaner',
-        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
+        productImage: ["./assets/images/Mat & table cleaner.jfif"]
       }]
     },
     {
@@ -42,7 +42,7 @@ const CategoriesData = [
       },
       {
         productName: 'ESD Caution tape',
-        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
+        productImage: ["./assets/images/Caution tape.jpg", "./assets/images/esd Caution tape.jpg"]
       }]
     },
     {
@@ -50,20 +50,29 @@ const CategoriesData = [
       targetDiv: 'div-4',
       products: [{
         productName: 'Anti-Static dotted gloves​',
-        productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
         productDescription: 'ESD Anti-fatigue mat​',
       },
       {
         productName: 'ESD Palm Fit PU Coated gloves',
-        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
+        productImage: ["./assets/images/ESD Palm Fit PU Coated gloves.jfif"]
       },
       {
         productName: 'ESD finger top Fit PU Coated gloves',
-        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
+        productImage: ["./assets/images/ESD finger top Fit PU Coated gloves.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
       },
       {
         productName: 'Finger cots',
-        productImage: ["assets/images/ESD rubber mat – Green.jfif", "assets/images/ESD rubber mat – Green-2.jfif"]
+        productImage: ["./assets/images/Finger cots.jfif", "./assets/images/Finger cots.jfif"]
+      }]
+    },
+    {
+      title: 'ESD footwear',
+      targetDiv: 'div-5',
+      products: [{
+        productName: 'ESD safety shoe​',
+        productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+        productDescription: 'ESD Anti-fatigue mat​',
       }]
     }
     ]
@@ -72,9 +81,20 @@ const CategoriesData = [
   },
 
   {
-    title: 'Material handling & Storage'
+    title: 'Material handling & Storage',
+    description: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    subCategory: [
+      {
+        title: 'Bins & Crates',
+        targetDiv: 'div-1',
+        products: [{
+          productName: 'Conductive crate​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        ]
+      }],
   },
-
   {
     title: 'Clean room disposable products'
   },
@@ -155,7 +175,8 @@ function renderCategoryMenu(subCategory) {
   console.log(subCategory);
   const navList = document.getElementById('menuList');
   navList.innerHTML = '';
-
+  const addTargetDivs = document.getElementById("target-divs");
+  addTargetDivs.innerHTML = "";
   subCategory.forEach((item, index) => {
     const listItem = document.createElement('li');
     listItem.className = 'nav-item';
@@ -179,16 +200,13 @@ function renderCategoryMenu(subCategory) {
     const innerContainer = document.createElement('div');
     innerContainer.className = 'container-fluid Mycontainer';
 
-
-
     item.products.forEach((product) => {
       const card = renderCards(product)
       innerContainer.appendChild(card);
       targetDiv.appendChild(innerContainer);
     })
 
-
-    document.getElementById("target-divs").appendChild(targetDiv);
+    addTargetDivs.appendChild(targetDiv);
   });
 }
 
