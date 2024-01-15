@@ -1,6 +1,7 @@
 :root{
     --Product-card-background : #f9f6ee;
     --Product-card-border: grey;
+    --My-Categories-background: #fffafa;
 }
 body {
     overflow-x: hidden;
@@ -17,7 +18,6 @@ body {
     width: 150px;
     height: 50px;
     overflow: hidden;
-    /* background-color: red; */
 }
 
 .navbar-brand>img {
@@ -116,15 +116,14 @@ body {
     border: 1px solid var(--Product-card-border);
 }
 
-/* .myProductCardText{
-    background-color: red;
-    overflow-x: hidden;
-    overflow: scroll;
-    max-height: 30%;
-} */
+.myProductCardText{
+    font-size: 13px;
+}
 
-.myProductCardText::-webkit-scrollbar {
-    display: none;
+.myCategories{
+    background-color: var(--My-Categories-background);
+    border: 1px solid #000;
+    margin-inline: 3px;
 }
 
 .card>img {

@@ -113,15 +113,15 @@ const CategoriesData = [
       targetDiv: 'div-7',
       products: [{
         productName: 'ESD wrist strap ',
-        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+        productImage: ["./assets/images/esd wrist strap cord less.webp", "./assets/images/esd wrist strap cord less-2.jpg"],
       },
       {
         productName: 'Grounding cord​',
-        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+        productImage: ["./assets/images/grounding cord.jpg"],
       },
       {
         productName: 'Common grounding point​',
-        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+        productImage: ["./assets/images/common grounding point.webp", "./assets/images/common grounding point-2.webp"],
       },
       {
         productName: 'ESD heel strap​',
@@ -129,7 +129,7 @@ const CategoriesData = [
       },
       {
         productName: 'ESD field service kit',
-        productImage: ["./assets/images/Anti-Static dotted gloves.jfif", "./assets/images/Anti-Static dotted gloves-2.jfif"],
+        productImage: ["./assets/images/esd fields service kit-2.jpg", "./assets/images/esd fields service kit-3.jpg"],
       },
       {
         productName: 'ESD shoe cover with conductive strip',
@@ -179,7 +179,7 @@ const CategoriesData = [
         title: 'component Organizer',
         targetDiv: 'div-2',
         products: [{
-          productName: 'Conductive crate​',
+          productName: 'ESD component organizer​',
           productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
           productDescription: 'description​',
         },
@@ -189,15 +189,79 @@ const CategoriesData = [
         title: 'PCB storage',
         targetDiv: 'div-3',
         products: [{
-          productName: 'Conductive crate​',
+          productName: 'ESD PCB storage trolley',
           productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
           productDescription: 'description​',
         },
+        {
+          productName: 'ESD PCB I shape tray',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'ESD PCB L shape tray',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'ESD PCB magazine rack',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        }
+
         ]
-      }],
+      }]
   },
   {
-    title: 'Clean room disposable products'
+    title: 'Clean room disposable products',
+    description: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    subCategory: [
+      {
+        title: 'Clean room disposable products',
+        targetDiv: 'div-1',
+        products: [{
+          productName: 'Lint free Wipes​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Non-Woven shoe cover',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'bouffant cap​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'CPE/plastic Shoe cover​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Sticky mat​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+          },
+          {
+            productName: 'Latex gloves​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Vinyl gloves​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Shoe cover with clips G type hook​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          }
+        ]
+      },
+      ]
   },
 
   {
@@ -283,7 +347,7 @@ function renderCategoryMenu(subCategory) {
     listItem.className = 'nav-item';
 
     const link = document.createElement('a');
-    link.className = `nav-link menu-item ${index === 0 ? 'active' : ''}`;
+    link.className = `nav-link menu-item myCategories ${index === 0 ? 'active' : ''}`;
     link.setAttribute('data-target', item.targetDiv);
     link.href = '#';
     link.textContent = item.title;
@@ -360,7 +424,7 @@ function renderCards(product) {
   const cardBody = document.createElement('div');
   cardBody.className = 'card-body';
 
-  const cardTitle = document.createElement('h6');
+  const cardTitle = document.createElement('h5');
   cardTitle.className = 'card-title';
   cardTitle.textContent = product.productName;
 
