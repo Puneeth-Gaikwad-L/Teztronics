@@ -265,31 +265,291 @@ const CategoriesData = [
   },
 
   {
-    title: 'ESD & non ESD chairs  '
+    title: 'ESD & non ESD chairs',
+    description: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    subCategory: [
+      {
+        title: 'ESD & non ESD chairs',
+        targetDiv: 'div-1',
+        products: [{
+          productName: 'ESD & non ESD chairs',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        }]
+      }
+    ]
   },
 
   {
-    title: 'Soldering equipment, accessories & tools​'
+    title: 'Soldering equipment, accessories & tools​',
+    description: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    subCategory: [
+      {
+        title: 'Fume extractor system',
+        targetDiv: 'div-1',
+        products: [{
+          productName: 'Fume extractor system​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Fume absorber 493',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Soldering station SLD 936​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'SMD rework station SLD 853​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Soldering station with auto tin feeder​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+          },
+          {
+            productName: 'Soldering station digital',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Bench top ionizing air blower​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Solder pot​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Ionized air gun​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Ultra sonic cleaner​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Soldering tips​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'SLD 191A thermometer​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Hakko sensor 191-212​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Solder wire stand​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'S.S Tweezers​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'ESD tweezers​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Vacuum pickup pen​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'ESD IPA dispenser​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'ESD brush​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Flux bottle with needle​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Cutter​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Flux bottle with brush​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Refillable flux pen​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          },
+          {
+            productName: 'Fan filter​',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          }
+        ]
+      },
+      ]
   },
 
   {
-    title: 'Static measuring instruments​'
+    title: 'Static measuring instruments​',
+    description: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    subCategory: [
+      {
+        title: 'Static measuring instruments',
+        targetDiv: 'div-1',
+        products: [{
+          productName: 'Combo tester CT-01 with stand​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Surface resistivity meter',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Continuous workstation monitor Z107​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Wrist strap & footwear tester WSFT01',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Hammer type ESD surface resistance tester SL-030B​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+          }
+        ]
+      },
+      ]
   },
 
   {
-    title: 'ESD flooring​'
+    title: 'ESD flooring​',
+    description: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    subCategory: [
+      {
+        title: 'ESD flooring',
+        targetDiv: 'div-1',
+        products: [{
+          productName: 'Antistatic vinyl mat',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'ESD tile',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        }
+        ]
+      },
+      ]
   },
 
   {
-    title: 'Tape & tape dispenser​'
+    title: 'Tape & tape dispenser​',
+    description: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    subCategory: [
+      {
+        title: 'Tape & tape dispenser',
+        targetDiv: 'div-1',
+        products: [{
+          productName: 'Tape & tape dispenser',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        }
+        ]
+      },
+      ]
   },
 
   {
-    title: 'ESD packing cover​'
+    title: 'ESD packing cover​',
+    description: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    subCategory: [
+      {
+        title: 'Cover/bags',
+        targetDiv: 'div-1',
+        products: [{
+          productName: 'Pink antistatic cover',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Aluminum moisture barrier bags',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+          },
+          {
+            productName: 'Static shield cover',
+            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+            productDescription: 'description​',
+          }
+        ]
+      },
+      {
+        title: 'Automatic tape dispenser',
+        targetDiv: 'div-2',
+        products: [{
+          productName: 'Automatic tape dispenser',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        }
+        ]
+      },
+      {
+        title: 'Humidity indicators cards',
+        targetDiv: 'div-3',
+        products: [{
+          productName: 'Humidity indicators cards',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        }
+        ]
+      }
+      ]
   },
 
   {
-    title: 'Magnifier and microscope​'
+    title: 'Magnifier and microscope​',
+    description: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+    subCategory: [
+      {
+        title: 'Magnifier and microscope',
+        targetDiv: 'div-1',
+        products: [{
+          productName: 'Magnifier and microscope',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        }
+        ]
+      },
+      ]
   }
 
 ];

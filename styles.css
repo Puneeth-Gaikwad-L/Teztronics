@@ -1,6 +1,6 @@
 :root{
     --Product-card-background : #f9f6ee;
-    --Product-card-border: grey;
+    --Product-card-border: rgba(128, 128, 128, 0.354);
     --My-Categories-background: #fffafa;
 }
 body {
