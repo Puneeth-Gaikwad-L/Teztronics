@@ -1,3 +1,7 @@
+:root{
+    --Product-card-background : #f9f6ee;
+    --Product-card-border: grey;
+}
 body {
     overflow-x: hidden;
     background-color: #efefe9;
@@ -95,9 +99,32 @@ body {
 }
 
 .MyProductCard{
-    height: 450px;
+    height: 460px;
+    background-color: var(--Product-card-background);
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.MyProductCard>img{
+    width: 95%;
+    margin-inline: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid var(--Product-card-border);
+}
+
+/* .myProductCardText{
     background-color: red;
-    margin-top: auto;
+    overflow-x: hidden;
+    overflow: scroll;
+    max-height: 30%;
+} */
+
+.myProductCardText::-webkit-scrollbar {
+    display: none;
 }
 
 .card>img {

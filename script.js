@@ -289,7 +289,10 @@ function renderCategoryMenu(subCategory) {
     link.textContent = item.title;
 
     // Add click event listener to each link
-    link.addEventListener('click', () => handleLinkClick());
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      handleLinkClick();
+    });
 
     listItem.appendChild(link);
     navList.appendChild(listItem);
@@ -357,12 +360,12 @@ function renderCards(product) {
   const cardBody = document.createElement('div');
   cardBody.className = 'card-body';
 
-  const cardTitle = document.createElement('h5');
+  const cardTitle = document.createElement('h6');
   cardTitle.className = 'card-title';
   cardTitle.textContent = product.productName;
 
   const cardText = document.createElement('p');
-  cardText.className = 'card-text';
+  cardText.classList.add('card-text', 'myProductCardText');
   cardText.textContent = `Some quick example text to build on the card title and make up the bulk of the card's content.`;
 
   const cardLink = document.createElement('a');
