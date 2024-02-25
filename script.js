@@ -243,25 +243,25 @@ const CategoriesData = [
           productName: 'Sticky mat​',
           productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
           productDescription: 'description​',
-          },
-          {
-            productName: 'Latex gloves​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Vinyl gloves​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Shoe cover with clips G type hook​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          }
+        },
+        {
+          productName: 'Latex gloves​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Vinyl gloves​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Shoe cover with clips G type hook​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        }
         ]
       },
-      ]
+    ]
   },
 
   {
@@ -311,105 +311,105 @@ const CategoriesData = [
           productName: 'Soldering station with auto tin feeder​',
           productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
           productDescription: 'description​',
-          },
-          {
-            productName: 'Soldering station digital',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Bench top ionizing air blower​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Solder pot​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Ionized air gun​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Ultra sonic cleaner​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Soldering tips​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'SLD 191A thermometer​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Hakko sensor 191-212​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Solder wire stand​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'S.S Tweezers​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'ESD tweezers​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Vacuum pickup pen​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'ESD IPA dispenser​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'ESD brush​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Flux bottle with needle​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Cutter​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Flux bottle with brush​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Refillable flux pen​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          },
-          {
-            productName: 'Fan filter​',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          }
+        },
+        {
+          productName: 'Soldering station digital',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Bench top ionizing air blower​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Solder pot​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Ionized air gun​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Ultra sonic cleaner​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Soldering tips​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'SLD 191A thermometer​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Hakko sensor 191-212​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Solder wire stand​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'S.S Tweezers​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'ESD tweezers​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Vacuum pickup pen​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'ESD IPA dispenser​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'ESD brush​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Flux bottle with needle​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Cutter​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Flux bottle with brush​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Refillable flux pen​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        },
+        {
+          productName: 'Fan filter​',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        }
         ]
       },
-      ]
+    ]
   },
 
   {
@@ -443,10 +443,10 @@ const CategoriesData = [
           productName: 'Hammer type ESD surface resistance tester SL-030B​',
           productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
           productDescription: 'description​',
-          }
+        }
         ]
       },
-      ]
+    ]
   },
 
   {
@@ -468,7 +468,7 @@ const CategoriesData = [
         }
         ]
       },
-      ]
+    ]
   },
 
   {
@@ -485,7 +485,7 @@ const CategoriesData = [
         }
         ]
       },
-      ]
+    ]
   },
 
   {
@@ -504,12 +504,12 @@ const CategoriesData = [
           productName: 'Aluminum moisture barrier bags',
           productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
           productDescription: 'description​',
-          },
-          {
-            productName: 'Static shield cover',
-            productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
-            productDescription: 'description​',
-          }
+        },
+        {
+          productName: 'Static shield cover',
+          productImage: ["./assets/images/ESD Anti-fatigue mat.jfif", "./assets/images/ESD Anti-fatigue mat-2.jfif"],
+          productDescription: 'description​',
+        }
         ]
       },
       {
@@ -532,7 +532,7 @@ const CategoriesData = [
         }
         ]
       }
-      ]
+    ]
   },
 
   {
@@ -549,7 +549,7 @@ const CategoriesData = [
         }
         ]
       },
-      ]
+    ]
   }
 
 ];
@@ -585,6 +585,7 @@ function renderCategory(cardDataArray) {
         renderCategoryMenu(CategoriesData[i].subCategory);
         const displaySubCat = document.getElementById("displayMenu");
         displaySubCat.style.height = "fit-content";
+        document.getElementById("cat-header").innerText = cardDataArray[i].title;
       } else {
         document.getElementById("displayMenu").style.height = "0";
       }
@@ -595,6 +596,10 @@ function renderCategory(cardDataArray) {
 }
 
 renderCategory(CategoriesData)
+renderCategoryMenu(CategoriesData[0].subCategory);
+const displaySubCat = document.getElementById("displayMenu");
+document.getElementById("cat-header").innerText = CategoriesData[0].title;
+displaySubCat.style.height = "fit-content";
 
 function renderCategoryMenu(subCategory) {
   console.log(subCategory);
@@ -666,12 +671,13 @@ function handleLinkClick() {
 
       // Add 'active' class to the target div
       targetDiv.classList.add('active');
+
     });
   });
 }
 
 function renderCards(product) {
-  console.log(product);
+  // console.log(product);
   const card = document.createElement('div');
   card.classList.add('card', 'MyProductCard');
   card.style = 'width: 18rem;';
@@ -707,3 +713,29 @@ function renderCards(product) {
   return card;
 
 }
+
+let map;
+
+async function initMap() {
+  const { Map } = await google.maps.importLibrary("maps");
+
+  map = new Map(document.getElementById("map"), {
+    center: { lat: 13.06167286872496, lng: 77.55515123743002 },
+    zoom: 18,
+  });
+
+  setMarkers(map, 13.06167286872496, 77.55515123743002, "testronics")
+
+}
+
+function setMarkers(map, lat, lng, title) {
+  new google.maps.Marker({
+    position: { lat: lat, lng: lng },
+    // label: b,
+    map,
+    title: title,
+  });
+}
+
+
+initMap();

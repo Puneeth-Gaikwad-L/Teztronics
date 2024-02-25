@@ -65,11 +65,29 @@ body {
     object-position: center;
 }
 
+.categories-section {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.categories-section::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    height: fit-content;
+    overflow: hidden;
+}
+
 .menu {
     width: 100vw;
-    height: 0;
-    margin-top: 20px;
+    height: fit-content;
+    margin-top: 10px;
     overflow: hidden;
+    border-radius: 20px;
     transition: all 0.5s ease-in;
 }
 
@@ -154,9 +172,10 @@ body {
 }
 
 .categories {
-    width: 100vw;
-    max-height: 100vh;
+    width: 30%;
+    height: 100%;
 }
+
 
 .Mycontainer {
     width: 100%;
@@ -175,8 +194,12 @@ body {
 .menu-header {
     width: 95%;
     margin-inline: auto;
-    text-align: left;
+    text-align: center;
     margin-top: 10px;
+}
+
+#cat-header {
+    margin-left: 20px;
 }
 
 .cat-width {
@@ -207,17 +230,57 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    background-color: white;
 }
 
 .footer-content {
-    width: 97%;
-    height: 95%;
-    background-color: lightgray;
-    border-radius: 20px 20px 0px 0px;
+    width: 95%;
+    height: 90%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.map {
+    height: 110%;
+    /* The height is 400 pixels */
+    width: 50%;
+    /* The width is the width of the web page */
+    clip-path: polygon(0 1%, 100% 0, 75% 100%, 0% 100%);
+    border-radius: 20px 0px 20px 20px;
+}
+
+
+.card-header {
+    /* background-color: red; */
+    width: 95%;
+    margin-inline: auto;
+    border-radius: 20px !important;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 10px;
+}
+
+.name-tag {
+    color: #eba10e;
+}
+
+.footer-contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.website-links>li>a{
+    color: #eba10e;
 }
 
 @media only screen and (max-width: 620px) {
@@ -243,5 +306,25 @@ body {
         text-align: center;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    .footer-content {
+        height: 100%;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    .map {
+        clip-path: none;
+        width: 100%;
+        /* clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%); */
+        border-radius: 20px;
+    }
+
+    .footer-contact-details{
+        flex-direction: column;
+    }
+    .website-links{
+        display: none;
     }
 }
