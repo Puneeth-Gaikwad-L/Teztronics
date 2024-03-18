@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./home.css">
 
   <title>Teztronics</title>
 
@@ -99,7 +99,7 @@
 
     <div class="title">
       <h3 class="menu-header">Our Products</h3>
-      <button class="MyBtn">View all</button>
+      <a class="MyBtn" href="./productView.html">View all</a>
     </div>
     <section class="categories-section">
 
@@ -154,23 +154,23 @@
         <div class="formSection">
           <form class="form">
             <div>
-              <label for="orgName">Organization Name</label>
+              <label for="orgName">Organization Name <i class="fa-solid fa-asterisk" style="color: #ff0000;"></i></label>
               <input id="orgName" type="text" required placeholder="your organization name">
             </div>
             <div>
-              <label for="email">Email</label>
+              <label for="email">Email <i class="fa-solid fa-asterisk" style="color: #ff0000;"></i></label>
               <input id="email" type="email" required placeholder="example@gmail.com">
             </div>
             <div>
-              <label for="place">Location</label>
+              <label for="place">Location <i class="fa-solid fa-asterisk" style="color: #ff0000;"></i></label>
               <input id="cxName" type="text" required placeholder="you are located at">
             </div>
             <div>
-              <label for="product">Product</label>
+              <label for="product">Product <i class="fa-solid fa-asterisk" style="color: #ff0000;"></i></label>
               <input id="product" type="text" required placeholder="your looking for">
             </div>
             <div>
-              <label for="product">Required Quantity</label>
+              <label for="product">Required Quantity <i class="fa-solid fa-asterisk" style="color: #ff0000;"></i></label>
               <input id="product" type="number" required placeholder="Quantity of product">
             </div>
             <button class="btn mySubmitBtn" type="submit">Contact us</button>
@@ -235,7 +235,8 @@
       ({ key: "AIzaSyDbhv3ILgInafSPot8od6RjRSkZ33VuNzs", v: "weekly" });</script>
 
   <!-- custom js file -->
-  <script src="./script.js"></script>
+  <script  src="./productsData.js"></script>
+  <script src="./home.js"></script>
 </body>
 
 </html>

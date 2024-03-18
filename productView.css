@@ -1,0 +1,50 @@
+:root {
+    --Product-card-background: #f9f6ee;
+    --Product-card-border: rgba(128, 128, 128, 0.354);
+    --My-Categories-background: #fffafa;
+    --body-background: #efefe9;
+
+    --body-background: #efefe9;
+    --font-color: black;
+
+    --body-background: linear-gradient(180deg,#efefe9, #d2d2d2);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background: var(--body-background);
+    color: var(--font-color);
+}
+
+.navbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand {
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.navbar-brand>img {
+    width: 100%;
+    object-fit: contain;
+    object-position: 0 -52px;
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.MyContainer{
+    width: 100%;
+    height: fit-content;
+    background-color: blue;
+}
