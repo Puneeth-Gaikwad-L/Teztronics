@@ -110,6 +110,7 @@ html {
     color: #0d4d90;
     font-weight: 600;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 
@@ -310,7 +311,7 @@ main {
     margin-left: 10px;
 }
 
-.fa-asterisk{
+.fa-asterisk {
     font-size: 10px;
     color: red !important;
 }

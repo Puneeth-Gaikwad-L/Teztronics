@@ -142,10 +142,14 @@ function renderCards(product) {
   cardText.classList.add('card-text', 'myProductCardText');
   cardText.textContent = `Some quick example text to build on the card title and make up the bulk of the card's content.`;
 
-  const cardLink = document.createElement('a');
-  cardLink.href = './productView.html';
+  const cardLink = document.createElement('button');
   cardLink.className = 'btn btn-primary';
-  cardLink.textContent = 'Get Quotes';
+  cardLink.textContent = 'View more';
+
+  cardLink.addEventListener('click', () => {
+    localStorage.setItem("product",JSON.stringify(product));
+    window.location.href = './productView.html';
+  });
 
   cardBody.appendChild(cardTitle);
   cardBody.appendChild(cardText);
@@ -157,6 +161,7 @@ function renderCards(product) {
   return card;
 
 }
+
 
 let map;
 

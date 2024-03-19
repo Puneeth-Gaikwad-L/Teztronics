@@ -34,10 +34,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link " href="./productView.html">All Products</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -45,7 +45,7 @@
             Dropdown
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#contactUs">Contact Us</a>
             <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
@@ -145,16 +145,17 @@
 
     </section>
 
-    <section class="contactUsSec">
+    <section id="contactUs" class="contactUsSec">
       <div class="contactUsImg">
         <div class="imgContainer">
           <img src="./assets/web images/3d-casual-life-man-chatting-remotely-with-female-colleague.png" alt="contactUs"
-          draggable="false">
+            draggable="false">
         </div>
         <div class="formSection">
           <form class="form">
             <div>
-              <label for="orgName">Organization Name <i class="fa-solid fa-asterisk" style="color: #ff0000;"></i></label>
+              <label for="orgName">Organization Name <i class="fa-solid fa-asterisk"
+                  style="color: #ff0000;"></i></label>
               <input id="orgName" type="text" required placeholder="your organization name">
             </div>
             <div>
@@ -170,7 +171,8 @@
               <input id="product" type="text" required placeholder="your looking for">
             </div>
             <div>
-              <label for="product">Required Quantity <i class="fa-solid fa-asterisk" style="color: #ff0000;"></i></label>
+              <label for="product">Required Quantity <i class="fa-solid fa-asterisk"
+                  style="color: #ff0000;"></i></label>
               <input id="product" type="number" required placeholder="Quantity of product">
             </div>
             <button class="btn mySubmitBtn" type="submit">Contact us</button>
@@ -235,7 +237,7 @@
       ({ key: "AIzaSyDbhv3ILgInafSPot8od6RjRSkZ33VuNzs", v: "weekly" });</script>
 
   <!-- custom js file -->
-  <script  src="./productsData.js"></script>
+  <script src="./productsData.js"></script>
   <script src="./home.js"></script>
 </body>
 
