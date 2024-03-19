@@ -158,3 +158,103 @@ main {
 .card:hover {
     cursor: pointer;
 }
+
+
+
+.contactUsSec {
+    width: 90vw;
+    height: 70vh;
+    background: linear-gradient(90deg, #0c2457, #0f387d, #0d4d90);
+    margin: 10px auto;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactUsImg {
+    height: 85%;
+    width: 70%;
+    display: flex;
+}
+
+.formSection {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form>div {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.form>div>label {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.fa-asterisk {
+    font-size: 10px;
+    color: red !important;
+}
+
+.form>div>input {
+    margin: 0;
+    border: 1px solid #91b4ff;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+.form>div>input::placeholder {
+    color: #91b4ff;
+}
+
+.form>div>input:focus {
+    outline-color: #310060;
+    outline-style: solid;
+}
+
+.mySubmitBtn {
+    font-weight: 600 !important;
+    border-radius: 10px !important;
+    margin-top: 10px;
+    background-color: #fff !important;
+}
+
+.imgContainer {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer>img {
+    animation: bounce 1s infinite alternate ease-out;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
