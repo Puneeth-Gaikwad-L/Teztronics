@@ -1,14 +1,6 @@
 let productToView = JSON.parse(localStorage.getItem("product"));
 localStorage.removeItem("product");
 
-// {
-//     "productName": "ESD Anti-fatigue mat​",
-//     "productImage": [
-//         "./assets/images/ESD Anti-fatigue mat.jfif",
-//         "./assets/images/ESD Anti-fatigue mat-2.jfif"
-//     ],
-//     "productDescription": "ESD Anti-fatigue mat​"
-// }
 
 if (productToView != null) {
     console.log("true");
@@ -66,7 +58,7 @@ function renderCards(product) {
     const cardImage = document.createElement('img');
     cardImage.src = product.productImage[0]; // Add the actual image source
     cardImage.className = 'card-img-top';
-    cardImage.alt = 'product.productName';
+    cardImage.alt = `${product.productName}`;
 
     const cardBody = document.createElement('div');
     cardBody.className = 'card-body';
